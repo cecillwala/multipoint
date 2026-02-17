@@ -235,25 +235,27 @@ export default function Home() {
           <div className="flex items-center justify-between h-20">
 
             {/* Logo */}
-            <div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('home')}>
-              <div className="flex items-center space-x-3">
-                {/* ── LOGO PLACEHOLDER ── Replace the block below with your actual logo ── */}
-                <div className="relative w-12 h-12 rounded-lg overflow-hidden shadow-lg flex items-center justify-center bg-gradient-to-br from-blue-900 to-red-600">
-                  {/* Swap this Image tag when you have your logo in /public/logo.png */}
-                  {/* <Image src="/logo.png" alt="Multipoint Advisory Logo" fill className="object-contain p-1" /> */}
-                  <span className="text-white font-black text-lg tracking-tight">MP</span>
-                </div>
-                {/* ──────────────────────────────────────────────────────────── */}
-                <div>
-                  <h1 className={`text-xl font-black tracking-tight transition-colors duration-300 ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
-                    MULTIPOINT
-                  </h1>
-                  <p className={`text-xs uppercase tracking-widest transition-colors duration-300 ${isScrolled ? 'text-slate-500' : 'text-slate-300'}`}>
-                    Advisory
-                  </p>
-                </div>
-              </div>
-            </div>
+<div className="flex-shrink-0 cursor-pointer" onClick={() => scrollToSection('home')}>
+  <div className="flex items-center space-x-3">
+    <div className="relative w-12 h-12 rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src="/images/mp logo3.jpg"
+        alt="Multipoint Advisory Logo"
+        fill
+        className="object-contain"
+        priority
+      />
+    </div>
+    <div>
+      <h1 className={`text-xl font-black tracking-tight transition-colors duration-300 ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+        MULTIPOINT
+      </h1>
+      <p className={`text-xs uppercase tracking-widest transition-colors duration-300 ${isScrolled ? 'text-slate-500' : 'text-slate-300'}`}>
+        Advisory
+      </p>
+    </div>
+  </div>
+</div>
 
             {/* Desktop nav */}
             <div className="hidden md:flex items-center space-x-1">
@@ -328,15 +330,19 @@ export default function Home() {
           <div className="animate-hero-in">
             {/* Logo mark */}
             <div className="mb-10 flex justify-center">
-              <div className="relative w-28 h-28 bg-white rounded-2xl flex items-center justify-center shadow-2xl shadow-black/40">
-                {/* ── LOGO PLACEHOLDER ── Replace the block below with your actual logo ── */}
-                {/* <Image src="/logo.png" alt="Multipoint Advisory Logo" fill className="object-contain p-3" /> */}
-                <span className="text-blue-900 font-black text-4xl tracking-tighter">MP</span>
-                {/* ──────────────────────────────────────────────────────────── */}
-                {/* Pulse ring */}
-                <div className="absolute inset-0 rounded-2xl border-2 border-white/50 animate-ping-slow"></div>
-              </div>
-            </div>
+  <div className="relative w-28 h-28 bg-white rounded-2xl flex items-center justify-center shadow-2xl shadow-black/40">
+    <div className="relative w-20 h-20">
+      <Image
+        src="/images/mp logo3.jpg"
+        alt="Multipoint Advisory Logo"
+        fill
+        className="object-contain"
+        priority
+      />
+    </div>
+    <div className="absolute inset-0 rounded-2xl border-2 border-white/50 animate-ping-slow"></div>
+  </div>
+</div>
 
             <p className="text-red-400 uppercase tracking-[0.3em] text-sm font-semibold mb-4 animate-fade-delay-1">
               Corporate Profile
@@ -613,17 +619,19 @@ export default function Home() {
             {/* Brand */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-5">
-                {/* ── FOOTER LOGO PLACEHOLDER ── Replace with your actual logo ── */}
-                <div className="relative w-12 h-12 rounded-xl overflow-hidden shadow-lg bg-gradient-to-br from-blue-500 to-red-600 flex items-center justify-center">
-                  {/* Swap this for: <Image src="/logo.png" alt="Logo" fill className="object-contain p-1.5" /> */}
-                  <span className="text-white font-black text-lg">MP</span>
-                </div>
-                {/* ──────────────────────────────────────────────────────────── */}
-                <div>
-                  <h3 className="font-black text-xl tracking-tight">MULTIPOINT</h3>
-                  <p className="text-xs text-slate-400 uppercase tracking-widest">Advisory</p>
-                </div>
-              </div>
+  <div className="relative w-12 h-12 rounded-xl overflow-hidden shadow-lg bg-white/10">
+    <Image
+      src="/images/mp logo3.jpg"
+      alt="Multipoint Advisory Logo"
+      fill
+      className="object-contain p-1"
+    />
+  </div>
+  <div>
+    <h3 className="font-black text-xl tracking-tight">MULTIPOINT</h3>
+    <p className="text-xs text-slate-400 uppercase tracking-widest">Advisory</p>
+  </div>
+</div>
               <p className="text-slate-400 text-sm leading-relaxed max-w-xs mb-5">
                 A multidisciplinary advisory firm delivering integrated solutions across infrastructure, digital transformation, research, climate, and public sector development.
               </p>
