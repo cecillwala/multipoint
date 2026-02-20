@@ -425,7 +425,7 @@ export default function TrainingPage() {
                 />
                 {/* Caption */}
                 <div className="absolute bottom-6 left-6 right-6">
-                  <p className="text-white font-bold text-sm">Delta Corner Annex, Westlands — Nairobi</p>
+                  <p className="text-white font-bold text-sm">Pinetree Plaza, Kaburu Drive — Nairobi</p>
                   <p className="text-blue-200 text-xs mt-0.5">Our training hub in the heart of Nairobi</p>
                 </div>
               </div>
