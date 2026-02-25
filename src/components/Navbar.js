@@ -61,31 +61,31 @@ export default function Navbar() {
 
           {/* ── Logo ── */}
           <Link href="/" className="flex-shrink-0">
-            <div className="flex items-center space-x-3">
-              <div className="relative w-12 h-12 rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src="/images/mp logo3.jpg"
-                  alt="Multipoint Advisory Logo"
-                  fill
-                  className="object-contain"
-                  priority
-                />
+           <div className="flex flex-col items-center">
+                <div className="relative h-10 w-30  overflow-hidden flex justify-items-start">
+                  <Image
+                    src="/images/mp logo.png"
+                    alt="Multipoint Advisory"
+                    fill
+                    className="w-fit mt-2 h-auto object-contain"
+                    priority
+                  />
+                  {/* <h1
+                  className={` font-black tracking-tight transition-colors duration-300 ${
+                    solidNav ? 'text-slate-900' : 'text-white'
+                  }`}
+                >MULTIPOINT ADVISORY</h1> */}
+
               </div>
               <div>
                 <h1
-                  className={`text-xl font-black tracking-tight transition-colors duration-300 ${
+                  className={` font-black tracking-tight transition-colors duration-300 ${
                     solidNav ? 'text-slate-900' : 'text-white'
                   }`}
                 >
-                  MULTIPOINT
+                  MULTIPOINT ADVISORY
                 </h1>
-                <p
-                  className={`text-xs uppercase tracking-widest transition-colors duration-300 ${
-                    solidNav ? 'text-slate-500' : 'text-slate-300'
-                  }`}
-                >
-                  Advisory
-                </p>
+                
               </div>
             </div>
           </Link>

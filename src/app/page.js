@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 // ─── Intersection Observer Hook ───────────────────────────────────────────────
 function useInView(options = {}) {
   const ref = useRef(null);
@@ -157,9 +158,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-
       {/* ── Hero ───────────────────────────────────────────────────────────── */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section
+        id="home"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      >
         {/* Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900">
           <div
@@ -171,13 +174,16 @@ export default function Home() {
           />
           <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full"
-            style={{ background: 'radial-gradient(circle, rgba(30,58,95,0.5) 0%, transparent 70%)' }}
+            style={{
+              background:
+                "radial-gradient(circle, rgba(30,58,95,0.5) 0%, transparent 70%)",
+            }}
           />
           <div
             className="absolute bottom-0 right-0 w-96 h-96 rounded-full opacity-10"
             style={{
-              background: 'radial-gradient(circle, #dc2626, transparent 70%)',
-              transform: 'translate(30%, 30%)',
+              background: "radial-gradient(circle, #dc2626, transparent 70%)",
+              transform: "translate(30%, 30%)",
             }}
           />
         </div>
@@ -185,7 +191,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 text-center">
           <div className="animate-hero-in">
             {/* Logo mark */}
-            <div className="mb-10 flex justify-center">
+            {/* <div className="mb-10 flex justify-center">
               <div className="relative w-28 h-28 bg-white rounded-2xl flex items-center justify-center shadow-2xl shadow-black/40">
                 <div className="relative w-20 h-20">
                   <Image
@@ -212,32 +218,38 @@ export default function Home() {
               </span>
             </h1>
 
-            <div className="h-px w-32 bg-gradient-to-r from-transparent via-red-500 to-transparent mx-auto mb-8 animate-fade-delay-3" />
+            <div className="h-px w-32 bg-gradient-to-r from-transparent via-red-500 to-transparent mx-auto mb-8 animate-fade-delay-3" /> */}
 
-            <p className="text-xl md:text-2xl text-slate-300 mb-4 max-w-3xl mx-auto font-light leading-relaxed animate-fade-delay-3">
-              Integrated Solutions Across Infrastructure, Digital Transformation,
-              <br className="hidden md:block" /> and Sustainable Development
+            <p className="text-2xl md:text-4xl font-semibold text-white mb-6 max-w-4xl mx-auto leading-[1.2] tracking-tight animate-fade-delay-3">
+              Integrated Solutions Across Infrastructure, Digital
+              Transformation,
+              <br className="hidden md:block" />
+              and Sustainable Development
             </p>
 
-            <p className="text-base text-slate-400 mb-14 max-w-xl mx-auto animate-fade-delay-4">
-              Empowering governments, development partners, and private sector clients with
-              strategic depth and technical expertise.
+            <p className="text-lg md:text-xl text-slate-300 mb-14 max-w-2xl mx-auto leading-relaxed font-light animate-fade-delay-4">
+              Empowering governments, development partners, and private sector
+              clients with strategic depth and technical expertise.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-delay-4">
               <button
-                onClick={() => scrollToSection('about')}
+                onClick={() => scrollToSection("about")}
                 className="group px-8 py-4 bg-white text-blue-900 rounded-xl font-bold text-base shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
                 Discover Our Expertise
-                <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">→</span>
+                <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
+                  →
+                </span>
               </button>
               <Link
                 href="/services"
                 className="group px-8 py-4 border border-white/30 text-white rounded-xl font-semibold text-base hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 inline-flex items-center justify-center"
               >
                 Our Services
-                <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">→</span>
+                <span className="ml-2 inline-block group-hover:translate-x-1.5 transition-transform">
+                  →
+                </span>
               </Link>
             </div>
           </div>
@@ -247,13 +259,17 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 bg-white/5 backdrop-blur-sm border-t border-white/10">
           <div className="max-w-7xl mx-auto px-6 py-4 grid grid-cols-3 divide-x divide-white/20">
             {[
-              { label: 'Sectors Served',   value: '5+' },
-              { label: 'Advisory Domains', value: '10+' },
-              { label: 'Client Focus',     value: '360°' },
+              { label: "Sectors Served", value: "5+" },
+              { label: "Advisory Domains", value: "10+" },
+              { label: "Client Focus", value: "360°" },
             ].map((stat) => (
               <div key={stat.label} className="text-center px-4 py-1">
-                <div className="text-2xl font-black text-white">{stat.value}</div>
-                <div className="text-xs text-slate-400 uppercase tracking-wider">{stat.label}</div>
+                <div className="text-2xl font-black text-white">
+                  {stat.value}
+                </div>
+                <div className="text-xs text-slate-400 uppercase tracking-wider">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -279,14 +295,16 @@ export default function Home() {
             className="mb-16 text-center"
             style={{
               opacity: aboutInView ? 1 : 0,
-              transform: aboutInView ? 'none' : 'translateY(30px)',
-              transition: 'all 0.7s ease',
+              transform: aboutInView ? "none" : "translateY(30px)",
+              transition: "all 0.7s ease",
             }}
           >
             <span className="inline-block px-5 py-2 bg-blue-900 text-white rounded-full text-xs font-bold mb-5 tracking-widest uppercase">
               Who We Are
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-5 tracking-tight">About Us</h2>
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-5 tracking-tight">
+              About Us
+            </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-900 to-red-600 mx-auto rounded-full" />
           </div>
 
@@ -294,22 +312,22 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             {[
               {
-                tag: 'VISION',
-                color: 'bg-blue-900',
-                text: 'We envision a future where organizations receive consistent, credible, and adaptable advice that aligns with their organizational goals, empowering them to make bold, informed and sustainable decisions.',
-                icon: '🔭',
+                tag: "VISION",
+                color: "bg-blue-900",
+                text: "We envision a future where organizations receive consistent, credible, and adaptable advice that aligns with their organizational goals, empowering them to make bold, informed and sustainable decisions.",
+                icon: "🔭",
               },
               {
-                tag: 'MISSION',
-                color: 'bg-red-600',
-                text: 'To deliver services across multiple sectors through a multidisciplinary team of experts committed to excellence and impact.',
-                icon: '🚀',
+                tag: "MISSION",
+                color: "bg-red-600",
+                text: "To deliver services across multiple sectors through a multidisciplinary team of experts committed to excellence and impact.",
+                icon: "🚀",
               },
               {
-                tag: 'PHILOSOPHY',
-                color: 'bg-slate-800',
-                text: 'We believe in partnering with our clients to offer expert guidance, innovative solutions and empowering growth. Every engagement is built on trust, collaboration and a shared commitment to success.',
-                icon: '🤝',
+                tag: "PHILOSOPHY",
+                color: "bg-slate-800",
+                text: "We believe in partnering with our clients to offer expert guidance, innovative solutions and empowering growth. Every engagement is built on trust, collaboration and a shared commitment to success.",
+                icon: "🤝",
               },
             ].map((item, i) => (
               <div
@@ -317,11 +335,15 @@ export default function Home() {
                 className="bg-slate-50 border border-slate-100 rounded-2xl p-7 hover:shadow-lg transition-shadow duration-300 group"
                 style={{ animation: `fadeInUp 0.6s ease ${i * 0.15}s both` }}
               >
-                <div className={`inline-flex items-center gap-2 ${item.color} text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4`}>
+                <div
+                  className={`inline-flex items-center gap-2 ${item.color} text-white text-xs font-bold px-3 py-1.5 rounded-full mb-4`}
+                >
                   <span>{item.icon}</span>
                   {item.tag}
                 </div>
-                <p className="text-slate-700 leading-relaxed text-sm">{item.text}</p>
+                <p className="text-slate-700 leading-relaxed text-sm">
+                  {item.text}
+                </p>
               </div>
             ))}
           </div>
@@ -330,41 +352,46 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-14 items-start mb-16">
             <div className="space-y-5">
               <p className="text-lg text-slate-700 leading-relaxed">
-                We are a{' '}
-                <strong className="text-blue-900">multidisciplinary advisory firm</strong>{' '}
-                providing integrated solutions across infrastructure, digital transformation,
-                research, climate change, and public sector development.
+                We are a{" "}
+                <strong className="text-blue-900">
+                  multidisciplinary advisory firm
+                </strong>{" "}
+                providing integrated solutions across infrastructure, digital
+                transformation, research, climate change, and public sector
+                development.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed">
-                Our work supports governments, development partners, and private sector clients
-                in navigating complex projects that require{' '}
+                Our work supports governments, development partners, and private
+                sector clients in navigating complex projects that require{" "}
                 <strong className="text-blue-900">
-                  technical depth, strategic insight, and long-term sustainability
+                  technical depth, strategic insight, and long-term
+                  sustainability
                 </strong>
                 .
               </p>
               <p className="text-lg text-slate-700 leading-relaxed">
-                Our team brings together expertise in infrastructure development, information
-                technology, finance, policy analysis, data and research, and climate and
-                sustainability advisory. This cross-sector flexibility allows us to deliver
-                practical, evidence-based advice that is responsive to evolving economic,
+                Our team brings together expertise in infrastructure
+                development, information technology, finance, policy analysis,
+                data and research, and climate and sustainability advisory. This
+                cross-sector flexibility allows us to deliver practical,
+                evidence-based advice that is responsive to evolving economic,
                 technological, and environmental challenges.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed">
-                We adopt a holistic perspective—combining strategic advisory, technical
-                analysis, and institutional strengthening—to support impactful development,
-                decision-making, and implementation.
+                We adopt a holistic perspective—combining strategic advisory,
+                technical analysis, and institutional strengthening—to support
+                impactful development, decision-making, and implementation.
               </p>
 
               {/* Expertise tags */}
               <div className="flex flex-wrap gap-2 pt-2">
                 {[
-                  'Infrastructure',
-                  'Digital Transformation',
-                  'Climate & ESG',
-                  'Policy Advisory',
-                  'Research & Analytics',
-                  'Public Sector',
+                  "Infrastructure",
+                  "Digital Transformation",
+                  "Climate & ESG",
+                  "Policy Advisory",
+                  "Research & Analytics",
+                  "Public Sector",
                 ].map((tag) => (
                   <span
                     key={tag}
@@ -394,12 +421,16 @@ export default function Home() {
               </div>
               {/* Floating accent cards */}
               <div className="absolute -bottom-5 -left-5 bg-white rounded-xl p-4 shadow-xl border border-slate-100 hidden md:block">
-                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Founded in</p>
+                <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">
+                  Founded in
+                </p>
                 <p className="text-2xl font-black text-blue-900">Nairobi</p>
                 <p className="text-xs text-slate-500">Kenya</p>
               </div>
               <div className="absolute -top-5 -right-5 bg-gradient-to-br from-blue-900 to-blue-700 rounded-xl p-4 shadow-xl hidden md:block">
-                <p className="text-xs text-blue-200 uppercase tracking-wider mb-1">Our Reach</p>
+                <p className="text-xs text-blue-200 uppercase tracking-wider mb-1">
+                  Our Reach
+                </p>
                 <p className="text-2xl font-black text-white">Multi-</p>
                 <p className="text-sm text-blue-200 font-medium">sectoral</p>
               </div>
@@ -421,7 +452,8 @@ export default function Home() {
                   Our Commitment
                 </p>
                 <h3 className="text-white text-2xl md:text-3xl font-bold leading-snug">
-                  Objective, high-quality advisory that creates measurable impact.
+                  Objective, high-quality advisory that creates measurable
+                  impact.
                 </h3>
               </div>
             </div>
@@ -430,7 +462,10 @@ export default function Home() {
       </section>
 
       {/* ── Our Values ─────────────────────────────────────────────────────── */}
-      <section id="values" className="py-28 bg-slate-50 relative overflow-hidden">
+      <section
+        id="values"
+        className="py-28 bg-slate-50 relative overflow-hidden"
+      >
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-900 via-red-600 to-blue-900" />
         <div className="absolute top-20 right-10 w-64 h-64 rounded-full border border-slate-200 opacity-60" />
         <div className="absolute bottom-20 left-10 w-40 h-40 rounded-full border border-slate-200 opacity-60" />
@@ -442,8 +477,8 @@ export default function Home() {
             className="mb-16 text-center"
             style={{
               opacity: valuesInView ? 1 : 0,
-              transform: valuesInView ? 'none' : 'translateY(30px)',
-              transition: 'all 0.7s ease',
+              transform: valuesInView ? "none" : "translateY(30px)",
+              transition: "all 0.7s ease",
             }}
           >
             <span className="inline-block px-5 py-2 bg-red-600 text-white rounded-full text-xs font-bold mb-5 tracking-widest uppercase">
@@ -454,8 +489,8 @@ export default function Home() {
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-red-600 to-blue-900 mx-auto rounded-full mb-6" />
             <p className="text-slate-500 max-w-xl mx-auto text-base leading-relaxed">
-              Five core principles that guide every engagement, every recommendation, and every
-              relationship we build.
+              Five core principles that guide every engagement, every
+              recommendation, and every relationship we build.
             </p>
           </div>
 
@@ -468,7 +503,12 @@ export default function Home() {
 
           {/* Values image with overlay */}
           <div className="relative h-72 md:h-96 rounded-3xl overflow-hidden shadow-2xl">
-            <Image src="/images/mp values.jpg" alt="Our Team and Values" fill className="object-cover" />
+            <Image
+              src="/images/mp values.jpg"
+              alt="Our Team and Values"
+              fill
+              className="object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
               <div className="flex flex-wrap gap-3">
@@ -487,7 +527,10 @@ export default function Home() {
       </section>
 
       {/* ── Services Preview ───────────────────────────────────────────────── */}
-      <section id="services" className="py-28 bg-white relative overflow-hidden">
+      <section
+        id="services"
+        className="py-28 bg-white relative overflow-hidden"
+      >
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-900 via-red-600 to-blue-900" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
@@ -497,8 +540,8 @@ export default function Home() {
             className="mb-16 text-center"
             style={{
               opacity: servicesInView ? 1 : 0,
-              transform: servicesInView ? 'none' : 'translateY(30px)',
-              transition: 'all 0.7s ease',
+              transform: servicesInView ? "none" : "translateY(30px)",
+              transition: "all 0.7s ease",
             }}
           >
             <span className="inline-block px-5 py-2 bg-blue-900 text-white rounded-full text-xs font-bold mb-5 tracking-widest uppercase">
@@ -509,8 +552,8 @@ export default function Home() {
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-900 to-red-600 mx-auto rounded-full mb-6" />
             <p className="text-slate-500 max-w-xl mx-auto text-base leading-relaxed">
-              Five integrated service areas designed to address the most complex challenges
-              facing governments, institutions, and businesses today.
+              Five integrated service areas designed to address the most complex
+              challenges facing governments, institutions, and businesses today.
             </p>
           </div>
 
@@ -530,7 +573,9 @@ export default function Home() {
               className="group inline-flex items-center gap-3 px-10 py-4 bg-blue-900 text-white rounded-xl font-bold text-base shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:bg-blue-800 transition-all duration-300"
             >
               Explore All Services
-              <span className="group-hover:translate-x-1.5 transition-transform">→</span>
+              <span className="group-hover:translate-x-1.5 transition-transform">
+                →
+              </span>
             </Link>
           </div>
         </div>
@@ -538,33 +583,71 @@ export default function Home() {
 
       {/* ── Global Styles ───────────────────────────────────────────────────── */}
       <style jsx global>{`
-        html { scroll-behavior: smooth; }
+        html {
+          scroll-behavior: smooth;
+        }
 
         @keyframes heroIn {
-          from { opacity: 0; transform: translateY(40px); }
-          to   { opacity: 1; transform: translateY(0); }
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
-        .animate-hero-in { animation: heroIn 1s ease both; }
+        .animate-hero-in {
+          animation: heroIn 1s ease both;
+        }
 
         @keyframes fadeDelay1 {
-          from { opacity: 0; transform: translateY(20px); }
-          to   { opacity: 1; transform: translateY(0); }
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
-        .animate-fade-delay-1 { animation: fadeDelay1 0.8s ease 0.2s both; }
-        .animate-fade-delay-2 { animation: fadeDelay1 0.8s ease 0.35s both; }
-        .animate-fade-delay-3 { animation: fadeDelay1 0.8s ease 0.5s both; }
-        .animate-fade-delay-4 { animation: fadeDelay1 0.8s ease 0.65s both; }
+        .animate-fade-delay-1 {
+          animation: fadeDelay1 0.8s ease 0.2s both;
+        }
+        .animate-fade-delay-2 {
+          animation: fadeDelay1 0.8s ease 0.35s both;
+        }
+        .animate-fade-delay-3 {
+          animation: fadeDelay1 0.8s ease 0.5s both;
+        }
+        .animate-fade-delay-4 {
+          animation: fadeDelay1 0.8s ease 0.65s both;
+        }
 
         @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(30px); }
-          to   { opacity: 1; transform: translateY(0); }
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
 
         @keyframes pingSlow {
-          0%   { transform: scale(1); opacity: 0.6; }
-          100% { transform: scale(1.25); opacity: 0; }
+          0% {
+            transform: scale(1);
+            opacity: 0.6;
+          }
+          100% {
+            transform: scale(1.25);
+            opacity: 0;
+          }
         }
-        .animate-ping-slow { animation: pingSlow 2.5s ease-out infinite; }
+        .animate-ping-slow {
+          animation: pingSlow 2.5s ease-out infinite;
+        }
       `}</style>
     </div>
   );

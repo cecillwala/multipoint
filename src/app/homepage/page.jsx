@@ -148,7 +148,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32 text-center">
           <div className="animate-fade-in-up">
             {/* Logo */}
-            <div className="mb-8 flex justify-center">
+            {/* <div className="mb-8 flex justify-center">
               <div className="relative w-24 h-24 bg-white rounded-2xl flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-300">
                 <span className="text-blue-900 font-bold text-4xl">MP</span>
               </div>
@@ -158,13 +158,13 @@ export default function Home() {
               MULTIPOINT ADVISORY
             </h1>
             
-            <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-orange-500 mx-auto mb-8"></div>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-orange-500 mx-auto mb-8"></div> */}
 
-            <p className="text-xl md:text-2xl text-slate-200 mb-4 max-w-3xl mx-auto font-light">
+            <p className="text-2xl md:text-3xl text-slate-200 mb-6 font-light leading-relaxed">
               Integrated Solutions Across Infrastructure, Digital Transformation, and Sustainable Development
             </p>
 
-            <p className="text-lg text-slate-300 mb-12 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
               Empowering organizations with strategic depth, technical expertise, and innovative solutions
             </p>
 

@@ -244,6 +244,39 @@ export default function TrainingPage() {
               <span className="text-slate-600">/</span>
               <span className="text-white font-medium">Training Institute</span>
             </div>
+             {/* <div className="relative h-14 w-28 rounded-xl bg-white shadow-md flex items-center justify-center">
+                 <div className="relative w-40 h-14">
+          <Image
+            src="/images/mp training logo.jpg"
+            alt="Multipoint Training Institute"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+
+             </div> */}
+              <div className="flex flex-col items-start space-x-3 mb-5">
+                          <div className="relative h-10 w-30  overflow-hidden flex justify-items-start">
+                                           <Image
+                                             src="/images/mp logo.png"
+                                             alt="Multipoint Advisory"
+                                             fill
+                                             className="w-fit mt-2 h-auto object-contain"
+                                             priority
+                                           />
+                                          
+                                       </div>
+                                       <div>
+                                         <h1
+                                           className={` font-black tracking-tight transition-colors duration-300 text-white`}
+                                         >
+                                           MULTIPOINT TRAINING INSTITUTE
+                                         </h1>
+                                         
+                                       </div>
+                                     </div>
+             
 
             <p
               className="text-red-400 uppercase tracking-[0.3em] text-sm font-semibold mb-5"

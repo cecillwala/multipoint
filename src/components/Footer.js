@@ -38,20 +38,41 @@ export default function Footer() {
 
           {/* ── Brand ── */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-5">
-              <div className="relative w-12 h-12 rounded-xl overflow-hidden shadow-lg bg-white/10">
-                <Image
-                  src="/images/mp logo3.jpg"
-                  alt="Multipoint Advisory Logo"
-                  fill
-                  className="object-contain p-1"
-                />
+            {/* <div className="flex items-center space-x-3 mb-5">
+              <div className="relative h-14 w-28 rounded-xl bg-white shadow-md flex items-center justify-center">
+                                <Image
+                                  src="/images/mp logo33.jpg"
+                                  alt="Multipoint Advisory"
+                                  fill
+                                  className="object-contain p-3"
+                                  priority
+                                />
               </div>
               <div>
                 <h3 className="font-black text-xl tracking-tight">MULTIPOINT</h3>
                 <p className="text-xs text-slate-400 uppercase tracking-widest">Advisory</p>
               </div>
-            </div>
+            </div> */}
+            <div className="flex flex-col items-start space-x-3 mb-5">
+             <div className="relative h-10 w-30  overflow-hidden flex justify-items-start">
+                              <Image
+                                src="/images/mp logo.png"
+                                alt="Multipoint Advisory"
+                                fill
+                                className="w-fit mt-2 h-auto object-contain"
+                                priority
+                              />
+                             
+                          </div>
+                          <div>
+                            <h1
+                              className={` font-black tracking-tight transition-colors duration-300 text-white`}
+                            >
+                              MULTIPOINT ADVISORY
+                            </h1>
+                            
+                          </div>
+                        </div>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs mb-5">
               A multidisciplinary advisory firm delivering integrated solutions across
