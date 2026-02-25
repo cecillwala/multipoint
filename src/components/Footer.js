@@ -59,7 +59,7 @@ export default function Footer() {
                                 src="/images/mp logo.png"
                                 alt="Multipoint Advisory"
                                 fill
-                                className="w-fit mt-2 h-auto object-contain"
+                                className="w-fit mt-2 bg-white rounded-l h-auto object-contain"
                                 priority
                               />
                              

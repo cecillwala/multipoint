@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* ── Logo ── */}
           <Link href="/" className="flex-shrink-0">
            <div className="flex flex-col items-center">
-                <div className="relative h-10 w-30  overflow-hidden flex justify-items-start">
+                <div className="relative h-10 w-30 bg-white/95 rounded-xl overflow-hidden flex justify-items-start">
                   <Image
                     src="/images/mp logo.png"
                     alt="Multipoint Advisory"
