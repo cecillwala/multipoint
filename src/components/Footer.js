@@ -53,8 +53,8 @@ export default function Footer() {
                 <p className="text-xs text-slate-400 uppercase tracking-widest">Advisory</p>
               </div>
             </div> */}
-            <div className="flex flex-col items-start space-x-3 mb-5">
-             <div className="relative h-10 w-30  overflow-hidden flex justify-items-start">
+            <div className="flex flex-col items-center w-fit mb-5">
+             <div className="relative h-10 w-30  overflow-hidden flex justify-items-center">
                               <Image
                                 src="/images/mp logo.png"
                                 alt="Multipoint Advisory"
@@ -74,7 +74,7 @@ export default function Footer() {
                           </div>
                         </div>
 
-            <p className="text-slate-400 text-sm leading-relaxed max-w-xs mb-5">
+            <p className="text-slate-400 text-sm leading-relaxed max-w-xs mb-5 m-0">
               A multidisciplinary advisory firm delivering integrated solutions across
               infrastructure, digital transformation, research, climate, and public sector
               development.

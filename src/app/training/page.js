@@ -256,7 +256,7 @@ export default function TrainingPage() {
         </div>
 
              </div> */}
-              <div className="flex flex-col items-start space-x-3 mb-5">
+              <div className="flex flex-col items-center w-fit space-x-3 mb-5">
                           <div className="relative h-10 w-30 bg-white rounded-xl overflow-hidden flex justify-items-start">
                                            <Image
                                              src="/images/mp logo.png"
