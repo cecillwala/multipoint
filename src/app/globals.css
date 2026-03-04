@@ -19,6 +19,17 @@
   }
 }
 
+@font-face {
+  font-family: 'Axiforma Heavy';
+  src: url('/fonts/Axiforma-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Axiforma Heavy', sans-serif;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
