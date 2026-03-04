@@ -407,7 +407,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-2xl bg-slate-200">
                 <Image
-                  src="/images/mp aboutus.jpg"
+                  src="https://res.cloudinary.com/dctidtuyv/image/upload/v1772617554/mp_aboutus_jl3zct.jpg"
                   alt="Multipoint Advisory Team"
                   fill
                   className="object-cover"
@@ -440,7 +440,7 @@ export default function Home() {
           {/* Port / Infrastructure hero image */}
           <div className="relative h-72 md:h-96 rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/mp hero.jpg"
+              src="https://res.cloudinary.com/dctidtuyv/image/upload/v1772618033/mp_hero_qvcimh.jpg"
               alt="Infrastructure & Port Development"
               fill
               className="object-cover"
@@ -504,7 +504,7 @@ export default function Home() {
           {/* Values image with overlay */}
           <div className="relative h-72 md:h-96 rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/mp values.jpg"
+              src="https://res.cloudinary.com/dctidtuyv/image/upload/v1772618172/mp_values_ktguoz.jpg"
               alt="Our Team and Values"
               fill
               className="object-cover"

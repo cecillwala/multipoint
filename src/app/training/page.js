@@ -27,7 +27,7 @@ const PROGRAMMES = [
     num: '01',
     title: 'Infrastructure & Engineering Programmes',
     desc: 'These programmes focus on the planning, development, delivery, and management of infrastructure projects. They are designed for engineers, project sponsors, regulators, and implementing agencies and cover areas such as infrastructure planning, design coordination, construction oversight, asset management, and sustainable infrastructure development.',
-    img: '/images/training p1.jpg',
+    img: 'https://res.cloudinary.com/dctidtuyv/image/upload/v1772619057/training_p1_dvls65.jpg',
     icon: '🏗️',
     tags: ['Infrastructure Planning', 'Design Coordination', 'Construction Oversight', 'Asset Management'],
     color: 'from-blue-900 to-blue-700',
@@ -36,7 +36,7 @@ const PROGRAMMES = [
     num: '02',
     title: 'Project Management & Delivery',
     desc: 'This category equips professionals with practical tools for effective project planning, execution, monitoring, and control. Training covers project lifecycle management, risk and cost control, scheduling, quality assurance, stakeholder engagement, and performance reporting, with applications across public and private sector projects.',
-    img: '/images/training p2.jpg',
+    img: 'https://res.cloudinary.com/dctidtuyv/image/upload/v1772619104/training_p2_gjw76d.jpg',
     icon: '📊',
     tags: ['Project Lifecycle Management', 'Risk & Cost Control', 'Quality Assurance', 'Stakeholder Engagement'],
     color: 'from-red-700 to-red-500',
@@ -45,7 +45,7 @@ const PROGRAMMES = [
     num: '03',
     title: 'Public–Private Partnerships (PPP) & Infrastructure Finance',
     desc: 'Our PPP programmes build capacity in the structuring, procurement, financing, and management of PPP projects. Topics include PPP frameworks, project preparation, financial modelling, risk allocation, contract management, and governance of concession arrangements.',
-    img: '/images/training p3.jpg',
+    img: 'https://res.cloudinary.com/dctidtuyv/image/upload/v1772619142/training_p3_uuhd98.jpg',
     icon: '🤝',
     tags: ['PPP Frameworks', 'Financial Modelling', 'Risk Allocation', 'Contract Management'],
     color: 'from-slate-800 to-slate-600',
@@ -54,7 +54,7 @@ const PROGRAMMES = [
     num: '04',
     title: 'Corporate Governance, Leadership & Compliance',
     desc: 'These programmes strengthen governance and leadership capacity at board and senior management levels. They address corporate governance frameworks, board effectiveness, ethics and integrity, regulatory compliance, internal controls, fiduciary responsibilities, and organisational accountability.',
-    img: '/images/training p4.jpg',
+    img: 'https://res.cloudinary.com/dctidtuyv/image/upload/v1772619175/training_p4_xiwx0u.jpg',
     icon: '⚖️',
     tags: ['Governance Frameworks', 'Board Effectiveness', 'Regulatory Compliance', 'Internal Controls'],
     color: 'from-blue-800 to-blue-600',
@@ -63,7 +63,7 @@ const PROGRAMMES = [
     num: '05',
     title: 'Environmental, Social & Governance (ESG) & Sustainability',
     desc: 'Our ESG programmes support organisations in integrating sustainability into strategy and operations. Training covers ESG risk management, sustainability reporting, climate and social safeguards, responsible investment, stakeholder engagement, and alignment with international ESG standards and frameworks.',
-    img: '/images/training p5.jpg',
+    img: 'https://res.cloudinary.com/dctidtuyv/image/upload/v1772619210/training_p5_khbf1p.jpg',
     icon: '🌿',
     tags: ['ESG Risk Management', 'Sustainability Reporting', 'Climate Safeguards', 'Responsible Investment'],
     color: 'from-emerald-800 to-emerald-600',
@@ -72,7 +72,7 @@ const PROGRAMMES = [
     num: '06',
     title: 'Business Management & Administration',
     desc: 'This category focuses on core management and operational skills required for effective organisational performance. Programmes include strategic management, financial and operational planning, human resource management, performance management, and organisational development.',
-    img: '/images/training p6.jpg',
+    img: 'https://res.cloudinary.com/dctidtuyv/image/upload/v1772619245/training_p6_doiqnn.jpg',
     icon: '💼',
     tags: ['Strategic Management', 'HR Management', 'Financial Planning', 'Organisational Development'],
     color: 'from-orange-700 to-orange-500',
@@ -81,7 +81,7 @@ const PROGRAMMES = [
     num: '07',
     title: 'Administration, Secretarial & Records Management',
     desc: 'These programmes enhance professional administrative capability and institutional efficiency. Training covers office administration, executive and board secretarial practice, records and information management, document control, compliance, and governance support functions.',
-    img: '/images/training p7.jpg',
+    img: 'https://res.cloudinary.com/dctidtuyv/image/upload/v1772619274/training_p7_gss8dd.jpg',
     icon: '📋',
     tags: ['Office Administration', 'Board Secretarial Practice', 'Records Management', 'Document Control'],
     color: 'from-slate-700 to-slate-500',
@@ -90,7 +90,7 @@ const PROGRAMMES = [
     num: '08',
     title: 'Information Technology & Digital Skills',
     desc: 'Our IT programmes build digital competence to support modern organisational operations. Training areas include information systems management, digital transformation, data management, cybersecurity awareness, office productivity tools, and the effective use of technology in administration and project delivery.',
-    img: '/images/training p8.jpg',
+    img: 'https://res.cloudinary.com/dctidtuyv/image/upload/v1772619307/training_p8_ps4ilv.jpg',
     icon: '💻',
     tags: ['Information Systems', 'Digital Transformation', 'Cybersecurity Awareness', 'Data Management'],
     color: 'from-blue-700 to-cyan-600',
@@ -259,7 +259,7 @@ export default function TrainingPage() {
               <div className="flex flex-col items-start space-x-3 mb-5">
                           <div className="relative h-10 w-30  overflow-hidden flex justify-items-start">
                                            <Image
-                                             src="/images/mp logo.png"
+                                             src="https://res.cloudinary.com/dctidtuyv/image/upload/v1772619609/mp_logo_aicycm.png"
                                              alt="Multipoint Advisory"
                                              fill
                                              className="w-fit mt-2 h-auto object-contain"
@@ -445,7 +445,7 @@ export default function TrainingPage() {
             >
               <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-2xl bg-slate-200">
                 <Image
-                  src="/images/training aboutus.jpg"
+                  src="https://res.cloudinary.com/dctidtuyv/image/upload/v1772619501/training_aboutus_ei7fg1.jpg"
                   alt="Multipoint Training Institute Building"
                   fill
                   className="object-cover"

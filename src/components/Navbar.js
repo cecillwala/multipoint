@@ -64,7 +64,7 @@ export default function Navbar() {
            <div className="flex flex-col items-center">
                 <div className="relative h-10 w-30  overflow-hidden flex justify-items-start">
                   <Image
-                    src="/images/mp logo.png"
+                    src="https://res.cloudinary.com/dctidtuyv/image/upload/v1772619609/mp_logo_aicycm.png"
                     alt="Multipoint Advisory"
                     fill
                     className="w-fit mt-2 h-auto object-contain"
