@@ -119,8 +119,8 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-slate-400 text-sm">
               <div>
-                <p className="text-slate-300 font-semibold">Pinetree Plaza, 8th Floor</p>
-                <p>Kaburu Drive, Off Ngong Road</p>
+                <p className="text-slate-300 font-semibold">Wu Yi Plaza, Block A, Wing B, Office B16</p>
+                <p>Galana Road, Kilimani</p>
                 <p>P.O. Box 633-00200</p>
                 <p className="text-white font-medium">Nairobi, Kenya</p>
               </div>
