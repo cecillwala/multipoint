@@ -147,7 +147,7 @@ export default function Footer() {
           <p className="text-slate-500 text-sm">
             © {new Date().getFullYear()} Multipoint Advisory. All rights reserved.
           </p>
-          <p className="text-slate-600 text-xs">Pinetree Plaza · Nairobi, Kenya</p>
+          <p className="text-slate-600 text-xs">Nairobi, Kenya</p>
         </div>
       </div>
     </footer>
