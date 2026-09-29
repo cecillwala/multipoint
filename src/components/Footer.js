@@ -126,10 +126,10 @@ export default function Footer() {
               </div>
               <div className="pt-2 space-y-2">
                 <a
-                  href="tel:+254114294598"
+                  href="tel:+254114926641"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
-                  <span>📞</span> +254 114 294 598
+                  <span>📞</span> +254 114 926 641
                 </a>
                 <a
                   href="mailto:info@multipointadvisory.com"
